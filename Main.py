@@ -24,17 +24,15 @@ def finalizar_app():
 def escolher_opcao():
     option = int(input('Escolha uma opção: '))
     # opcao_escolhida = int(opcao_escolhida)
-    match option:
-          case 1:
-                    print('Adicionar restaurante')
-          case 2:
-                    print('Listar restaurantes')
-          case 3:
-                    print('Ativar restaurante')
-          case 4:
-                    print('Finalizar app')
-          case _:
-                    print('Opção inválida!')      
+
+    if option == 1: 
+        print('Cadastrar restaurante')
+    elif option == 2: 
+        print('Listar restaurantes')
+    elif option == 3: 
+        print('Ativar restaurante')
+    else: 
+        finalizar_app()
     
 
 def main():
