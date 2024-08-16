@@ -1,5 +1,6 @@
 import os
-print(""""
+def get_name_program():
+       print(""""
 ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗░█████╗░  ██████╗░░█████╗░
 ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗  ██╔══██╗██╔══██╗
 █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░██║░░██║  ██║░░██║██║░░██║
@@ -13,11 +14,11 @@ print(""""
 ░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝\n""")
-
-print("1. cadastrar restaurantes")
-print('2. listar restaurantes')
-print("3. Ativar Restaurantes")
-print("4. Sair\n")
+def menu():
+          print("1. cadastrar restaurantes")
+          print('2. listar restaurantes')
+          print("3. Ativar Restaurantes")
+          print("4. Sair\n")
 
 option = input('escolha uma opcao: ')
 option = int(option)
@@ -54,6 +55,10 @@ elif(option == 3):
      print("Ativar restaurantes")
 else:
            finish()
+
+def main():
+       get_name_program()
+       
 
 
 
