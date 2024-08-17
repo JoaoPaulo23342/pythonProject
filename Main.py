@@ -21,9 +21,15 @@ def finalizar_app():
     
     print('𝙾 𝙰𝙿𝙻𝙸𝙲𝙰𝚃𝙸𝚅𝙾 𝙵𝙾𝙸 𝙵𝙸𝙽𝙰𝙻𝙸𝚉𝙰𝙳𝙾 𝙲𝙾𝙼 𝚂𝚄𝙲𝙴𝚂𝚂𝙾')
 
+def error():
+    print("Error 404\n")
+    input("Digite algo para voltar ao menu principal")
+    main()
+    
+
 def escolher_opcao():
     option = int(input('Escolha uma opção: '))
-    # opcao_escolhida = int(opcao_escolhida)
+    option = int(option)
 
     if option == 1: 
         print('Cadastrar restaurante')
@@ -31,18 +37,24 @@ def escolher_opcao():
         print('Listar restaurantes')
     elif option == 3: 
         print('Ativar restaurante')
+    elif option == 4: 
+        finalizar_app
     else: 
-        finalizar_app()
+        error()
     
 
-def main():
+def main(): 
+    os.system('cls')
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
-    finalizar_app()
+    
 
 if __name__ == '__main__':
     main()
+
+
+
 
 
 
