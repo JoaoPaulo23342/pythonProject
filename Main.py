@@ -30,6 +30,7 @@ def login_restaurante():
     os.system('cls')
     os.system('git add .')
     os.system('git commit -m "FistCommit"')
+    os.system('git push -u origin main')
     
 
 def escolher_opcao():
