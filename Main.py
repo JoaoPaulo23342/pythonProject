@@ -1,5 +1,5 @@
 import os
-
+name = []
 def exibir_nome_do_programa():
     print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -25,21 +25,26 @@ def error():
     print("Error 404\n")
     input("Digite algo para voltar ao menu principal")
     main()
+
+def login_restaurante():
+    os.system('cls')
+    os.system('git add .')
+    os.system('git commit -m "FistCommit"')
     
 
 def escolher_opcao():
-    try:
+    try: 
         option = int(input('Escolha uma opção: '))
         option = int(option)
 
         if option == 1: 
-            print('Cadastrar restaurante')
+            login_restaurante()
         elif option == 2: 
             print('Listar restaurantes')
         elif option == 3: 
             print('Ativar restaurante')
         elif option == 4: 
-            finalizar_app
+            finalizar_app()
         else: 
             error()
     except:
