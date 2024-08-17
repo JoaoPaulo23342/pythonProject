@@ -29,10 +29,13 @@ def error():
 def login_restaurante():
     os.system('cls')
     print('cadastro de novos restaurantes')
-    name = input("digite o nome do restaurante")
-    os.system('git add .')
-    os.system('git commit -m "FistCommit"')
-    os.system('git push -u origin main')
+    name_of = input("digite o nome do restaurante:  ")
+    name.append(name_of)
+    print(f"O seu {name} foi cadastrado no sistema com sucesso")
+    input('digite uma tecla para sair:')
+    os.system('cls')
+    main()
+
     
 
 def escolher_opcao():
