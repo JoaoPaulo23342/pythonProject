@@ -28,20 +28,24 @@ def error():
     
 
 def escolher_opcao():
-    option = int(input('Escolha uma opção: '))
-    option = int(option)
+    try:
+        option = int(input('Escolha uma opção: '))
+        option = int(option)
 
-    if option == 1: 
-        print('Cadastrar restaurante')
-    elif option == 2: 
-        print('Listar restaurantes')
-    elif option == 3: 
-        print('Ativar restaurante')
-    elif option == 4: 
-        finalizar_app
-    else: 
+        if option == 1: 
+            print('Cadastrar restaurante')
+        elif option == 2: 
+            print('Listar restaurantes')
+        elif option == 3: 
+            print('Ativar restaurante')
+        elif option == 4: 
+            finalizar_app
+        else: 
+            error()
+    except:
         error()
-    
+
+        
 
 def main(): 
     os.system('cls')
