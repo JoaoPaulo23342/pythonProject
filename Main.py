@@ -32,10 +32,8 @@ def retorna():
 def get_restaurante():
     os.system('cls')
     print('Listando os restaurantes\n')
-    
-    for names in name:
-        print(f'.{names}\n')
-
+    for restaurante in name:
+        print(f' - {restaurante["nome"]} | {restaurante["categoria"]} | {restaurante["ativo"]}')
     retorna()
 
 
