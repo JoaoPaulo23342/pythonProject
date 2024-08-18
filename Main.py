@@ -1,5 +1,5 @@
 import os
-name = ['Pepperoni', 'Mushroom', 'Komkobucha']
+name = ['Pepperoni', 'Mushroom', 'Kombucha']
 def exibir_nome_do_programa():
     print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -43,7 +43,7 @@ def login_restaurante():
     print('cadastro de novos restaurantes')
     name_of = input("digite o nome do restaurante:  ")
     name.append(name_of)
-    print(f"O seu {name} foi cadastrado no sistema com sucesso")
+    print(f"O seu {name_of} foi cadastrado no sistema com sucesso")
     input('digite uma tecla para sair:')
     os.system('cls')
     main()
