@@ -1,5 +1,6 @@
 import os
-name = ['Pepperoni', 'Mushroom', 'Kombucha']
+name = [{'nome': 'Praça', 'categoria': 'Self-service', 'ativo': False},
+        {'nome': 'MozosPizza', 'categoria': 'pizzaria', 'ativo': True}]
 def exibir_nome_do_programa():
     print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
