@@ -23,7 +23,9 @@ def finalizar_app():
 
 def error():
     print("Error 404\n")
-    input("Digite algo para voltar ao menu principal")
+    retorna()
+def retorna():
+    input("Digite algo para voltar ao menu principal ")
     main()
 
 def get_restaurante():
@@ -33,9 +35,7 @@ def get_restaurante():
     for names in name:
         print(f'.{names}\n')
 
-    input("Digite algo para voltar ao menu principal")
-    main()
-
+    retorna()
 
 
 def login_restaurante():
@@ -44,9 +44,8 @@ def login_restaurante():
     name_of = input("digite o nome do restaurante:  ")
     name.append(name_of)
     print(f"O seu {name_of} foi cadastrado no sistema com sucesso")
-    input('digite uma tecla para sair:')
-    os.system('cls')
-    main()
+    retorna()
+    
 
     
 
