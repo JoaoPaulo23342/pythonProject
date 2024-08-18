@@ -1,5 +1,5 @@
 import os
-name = []
+name = ['Pepperoni', 'Mushroom', 'Komkobucha']
 def exibir_nome_do_programa():
     print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -26,6 +26,18 @@ def error():
     input("Digite algo para voltar ao menu principal")
     main()
 
+def get_restaurante():
+    os.system('cls')
+    print('Listando os restaurantes\n')
+    
+    for names in name:
+        print(f'.{names}\n')
+
+    input("Digite algo para voltar ao menu principal")
+    main()
+
+
+
 def login_restaurante():
     os.system('cls')
     print('cadastro de novos restaurantes')
@@ -46,7 +58,7 @@ def escolher_opcao():
         if option == 1: 
             login_restaurante()
         elif option == 2: 
-            print('Listar restaurantes')
+            get_restaurante() 
         elif option == 3: 
             print('Ativar restaurante')
         elif option == 4: 
@@ -55,6 +67,7 @@ def escolher_opcao():
             error()
     except:
         error()
+        
 
         
 
