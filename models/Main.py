@@ -52,13 +52,6 @@ class restaurante:
     
     
 
-restaurante_praca = restaurante('Praca', 'Gourmet')
-restaurante_pizza = restaurante('pizza', 'italiana')
-restaurante_praca.switch_state()
-restaurante_praca.category = 'Gourmet'
-restaurante.set_category = 'gourmet'
-restaurante_pizza.switch_state()
 
-restaurante.listar_restaurantes()
 
 

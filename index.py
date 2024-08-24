@@ -1,14 +1,14 @@
 from models.Main import restaurante
 import os
 restaurante_rua = restaurante('rua', 'Gourmet')
-restaurante_mexicano = restaurante('mexican Food', 'Nachos')
-restaurante_mexicano.switch_state()
-restaurante_rua.switch_state()
+restaurante_rua.get_avaliacao('gui', 10)
+restaurante.get_avaliacao("joao", 4)
 
 
 def main():
         os.system('cls')
         restaurante.listar_restaurantes()
+        restaurante.
         
         
 
