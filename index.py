@@ -8,7 +8,7 @@ restaurante.get_avaliacao("joao", 4)
 def main():
         os.system('cls')
         restaurante.listar_restaurantes()
-        restaurante.
+        
         
         
 
