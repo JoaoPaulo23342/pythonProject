@@ -1,3 +1,5 @@
+from avaliacao import Avaliacao
+
 class restaurante:
     restaurantes = []
 
@@ -5,6 +7,7 @@ class restaurante:
         self._name = name
         self.category = category.upper()
         self._true = False
+        self.avaliacao = []
         restaurante.restaurantes.append(self)
 
     def get_name(self):
@@ -21,6 +24,8 @@ class restaurante:
 
     def get_true(self):
         return self.true
+    
+    
 
     def set_true(self, value):
         self.true = value
