@@ -55,7 +55,8 @@ class restaurante:
             return 0
         soma_das_notas = sum(Avaliacao._nota for avaliacao in self._avaliacao)
         quantidade = len(self._avaliacao)
-        media = round(soma_das_notas / quantidade)
+        media = round(soma_das_notas / quantidade,1)
+        return media
 
 
 
