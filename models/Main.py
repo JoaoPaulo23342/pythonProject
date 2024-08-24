@@ -38,12 +38,17 @@ class restaurante:
     def true(self):
         return 'true✅' if self._true else 'false❌'
     
+    def switch_state(self):
+        self._true = not self._true
+    
+    
 
 restaurante_praca = restaurante('Praca', 'Gourmet')
 restaurante_pizza = restaurante('pizza', 'italiana')
-restaurante_praca._name = 'Praça'
+restaurante_praca.switch_state()
 restaurante_praca.category = 'Gourmet'
 restaurante.set_category = 'gourmet'
+restaurante_pizza.switch_state()
 
 restaurante.listar_restaurantes()
 
