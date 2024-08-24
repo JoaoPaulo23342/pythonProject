@@ -1,4 +1,4 @@
-from models.Main import restaurante
+from models.Restaurante import restaurante
 import os
 restaurante_rua = restaurante('rua', 'Gourmet')
 restaurante_rua.get_avaliacao('gui', 10)

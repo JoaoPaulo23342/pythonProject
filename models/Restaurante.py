@@ -7,7 +7,7 @@ class restaurante:
         self._name = name
         self.category = category.upper()
         self._true = False
-        self.avaliacao = []
+        self._avaliacao = []
         restaurante.restaurantes.append(self)
 
     def get_name(self):
@@ -50,7 +50,14 @@ class restaurante:
         Avaliacao = Avaliacao(cliente, nota)
         self._avaliacao.append(Avaliacao)
     
-    
+    def AVG_avaliacoes(self):
+        if not self._avaliacao:
+            return 0
+        soma_das_notas = sum(Avaliacao._nota for avaliacao in self._avaliacao)
+        quantidade = len(self._avaliacao)
+        media = soma_das_notas / quantidade
+
+
 
 
 
