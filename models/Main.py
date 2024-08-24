@@ -46,6 +46,10 @@ class restaurante:
     def switch_state(self):
         self._true = not self._true
     
+    def get_avaliacao(self, cliente, nota):
+        Avaliacao = Avaliacao(cliente, nota)
+        self._avaliacao.append(Avaliacao)
+    
     
 
 restaurante_praca = restaurante('Praca', 'Gourmet')
