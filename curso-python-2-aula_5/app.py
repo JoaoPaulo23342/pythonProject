@@ -1,12 +1,12 @@
 from modelos.restaurante import Restaurante
+from menu.beverage import Beverage
+from menu.plate import Plate
 
-restaurante_praca = Restaurante('praça', 'Gourmet')
-restaurante_praca.receber_avaliacao('Gui', 10)
-restaurante_praca.receber_avaliacao('Lais', 8)
-restaurante_praca.receber_avaliacao('Emy', 2)
+beverage = Beverage("suco melancia", 30.32, "700ml")
+
 
 def main():
-    Restaurante.listar_restaurantes()
+    pass
 
 if __name__ == '__main__':
     main()
