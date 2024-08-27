@@ -1,3 +1,4 @@
 class ItemMenu:
           def __init__(self, name, price):
-                  pass
+                  self.name = name
+                  self.price = price
